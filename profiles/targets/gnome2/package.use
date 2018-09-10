@@ -1,0 +1,6 @@
+dev-libs/libxml2 python
+gnome-base/gnome-menus python
+x11-base/xorg-server kdrive xephyr
+media-libs/harfbuzz icu
+gnome-extra/gnome-media -aac
+gnome-base/gvfs ios fuse

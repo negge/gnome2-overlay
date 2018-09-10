@@ -1,0 +1,11 @@
+--- server/libvncserver/auth.c.orig	2017-10-08 09:34:33.461169346 -0400
++++ server/libvncserver/auth.c	2017-10-08 09:34:44.298169623 -0400
+@@ -70,7 +70,7 @@
+     gnutls_init(&cl->tlsSession, GNUTLS_SERVER);
+ 
+     gnutls_set_default_priority(cl->tlsSession);
+-    gnutls_kx_set_priority(cl->tlsSession, kx_priority);
++    gnutls_priority_set_direct(cl->tlsSession, kx_priority, NULL);
+ 
+     gnutls_credentials_set(cl->tlsSession,
+ 			   GNUTLS_CRD_ANON,

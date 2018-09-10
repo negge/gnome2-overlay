@@ -1,0 +1,7 @@
+<repositories encoding="unicode" version="1.1">
+  <repo priority="50" quality="experimental">
+    <name>gnome2</name>
+    <description>GNOME2 Overlay</description>
+    <source type="git">https://github.com/negge/gnome2-overlay.git</source>
+  </repo>
+</repositories>
